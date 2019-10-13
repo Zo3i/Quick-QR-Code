@@ -22,8 +22,8 @@ function showQr(info, tab) {
     // 最低优当前网页URL
     QRContant = info.pageUrl
   }
-  console.log("这是点击事件")
-  console.log(tab.id)
+  // console.log("这是点击事件")
+  // console.log(tab.id)
   // 呼叫前台调用方法。
   chrome.tabs.sendMessage(tab.id, QRContant, function(response) {
 

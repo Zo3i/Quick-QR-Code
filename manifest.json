@@ -1,19 +1,20 @@
 {
 "name":"QQR",
-"description":"快速生成二维码.",
+"description":"右键快速生成二维码.",
 "version":"1.0.0",
 "manifest_version":2,
 "icons": {
-      "48": "1.png"
+      "48": "logo.png"
    },
 "browser_action": {
-  "default_icon": "1.png",
+  "default_icon": "logo.png",
   "default_title": "Quick QR Code"
 },
 "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["./js/jq3.4.1.min.js", "./js/qrcode.js", "./js/content-script.js"],
+      "css": ["./css/custom.css"],
       "run_at": "document_start"
     }
 ],
