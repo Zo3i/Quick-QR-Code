@@ -25,13 +25,7 @@
 },
 "permissions":[
 		"contextMenus",
-		"tabs",
-		"notifications",
-		"webRequest",
-		"webRequestBlocking",
-		"storage",
-		"http://*/*",
-		"https://*/*"
+		"activeTab"
 ],
 	"homepage_url": "https://zxx.im"
 }
